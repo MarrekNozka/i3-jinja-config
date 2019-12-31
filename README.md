@@ -68,10 +68,11 @@ bar {
 ... call `jinja-create-config.py` by reload and restart. 
 
 ```sh
+# Yes really is necessary use i3-msg
 # reload the configuration file
-bindsym $mod+Shift+c exec ~/.i3/jinja-create-config.py; reload
+bindsym $mod+Shift+c exec "~/.i3/jinja-create-config.py; i3-msg reload"
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r exec ~/.i3/jinja-create-config.py; restart
+bindsym $mod+Shift+r exec "~/.i3/jinja-create-config.py; i3-msg restart"
 ```
 
 If you want split the configuration into multiple files:
