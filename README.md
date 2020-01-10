@@ -17,6 +17,16 @@ allows me to use **conditions** and to **include** configs into config.
 * https://github.com/kenyonj/i3-create-config
 
 
+## How it Work
+
+The `jinja-create-config.py` script take all files withs `.j2` suffix and
+render them to file named without `.j2`.
+
+For example:
+ * `config.j2` --> `config`
+ * `py3status.conf.j2` --> `py3status.conf`
+
+
 ## Usege
 
 Save the `jinja-create-config.py` in your `~/.i3` directory and save your
